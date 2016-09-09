@@ -103,14 +103,15 @@
                   <h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapse-one">
 									<i class="icon-down-open-1 control-icon"></i>
-									<i class="icon-laptop-1"></i> Fully Responsive Theme
+									<i class="icon-laptop-1">ViSION</i> 
 								</a>
 							</h4>
                 </div>
                 <!-- Toggle Content -->
                 <div id="collapse-one" class="panel-collapse collapse in">
-                  <div class="panel-body">Duis ute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like <strong>readable English</strong>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore...</div>
-                </div>
+                    <div class="panel-body"><p>Enhancers envisioned to provide career consultancy & various job oriented training programs for both kind of students, those who want to achive but unable to start thier career and second those who find themselves lacking in thier respective feilds of any stream as Engineering, Medical, Law, Management including Soft Skills etc.</p>
+                        <p>We maintain a cordial relationship with the top educational & corporate brands for enhancing the skills of the candidates and then provide them various job opportunities.
+                        </p></div>
               </div>
               <!-- End Accordion 1 -->
 

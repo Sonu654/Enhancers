@@ -64,8 +64,8 @@ class Enhancers extends CI_Controller {
                 $this->db->insert('std_contact_info', $contact);
                 foreach ($_POST['parent'] as $p) {
                     $p['form_no'] = $_POST['frm_no'];
-                    if(!empty($p))
-                    $this->db->insert('std_family_info', $p);
+                    if (!empty($p))
+                        $this->db->insert('std_family_info', $p);
                 }
 
                 foreach ($_POST['exam'] as $e) {
@@ -143,24 +143,36 @@ class Enhancers extends CI_Controller {
     public function Confermation() {
         if (isset($_SESSION['form_no'])) {
             $this->load->view('templates/header', ['title' => 'Confermation Page']);
-            $this->load->model('student','st');
+            $this->load->model('student', 'st');
             $st['form_no'] = $this->session->userdata('form_no');
-            $st['info']=$this->st->getPerInfo($st['form_no']);
-            $st['address']=$this->st->getAddress($st['form_no']);
-            $st['payment']=$this->st->getPaymentInfo($st['form_no']);
-            $this->load->view('confermation',$st);
+            $st['info'] = $this->st->getPerInfo($st['form_no']);
+            $st['address'] = $this->st->getAddress($st['form_no']);
+            $st['payment'] = $this->st->getPaymentInfo($st['form_no']);
+            $this->load->view('confermation', $st);
             $this->load->view('templates/footer');
         } else {
             redirect('Enhancers/Index');
         }
     }
-    
-    public function Complete(){
-        if($this->session->sess_destroy()){
+
+    public function Complete() {
+        if ($this->session->sess_destroy()) {
             redirect('Enhancers/Index');
-        }else{
+        } else {
             redirect('Enhancers/Confermation');
         }
     }
+
+    public function About() {
+        $data['title'] = "About Us";
+        $this->load->view('templates/header', $data);
+        $this->load->view('about');
+        $this->load->view('templates/footer');
+    }
+    
+    public function Contact(){
+        
+    }
+   
 
 }

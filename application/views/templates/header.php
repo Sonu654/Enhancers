@@ -38,6 +38,9 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>Assets/css/colors/yellow.css" title="yellow" media="screen" />	
 
         <style>
+            p{
+                text-align: justify;
+            }
             .img{
                 max-width: 300px;
             }
